@@ -7,13 +7,15 @@ foo@bar:~$ cd frontend
 foo@bar:~$ npm install
 ```
 
-__for update react part__
-```console
-foo@bar:~$ cd frontend
-foo@bar:~$ npm build
-```
+open two terminals and run
 
-__for backend launch__
-```console
-foo@bar:~$ python manage.py runserver
-```
+1.  __frontend launch__
+    ```console
+    foo@bar:~$ cd frontend
+    foo@bar:~$ npm run dev
+    ```
+
+2.  __backend launch__
+    ```console
+    foo@bar:~$ python manage.py runserver
+    ```
