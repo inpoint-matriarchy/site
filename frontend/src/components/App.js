@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from './layout/Header';
-import DashBoard from './todo/DashBoard';
+import DashBoard from './backend/DashBoard';
 
 class App extends Component {
     render() {
