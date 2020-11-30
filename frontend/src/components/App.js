@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import Maini from './Main';
+import MainPage from './MainPage';
 
 
 class App extends Component {
     render() {
-        return <Maini/> 
+        return <MainPage/> 
     }
 }
 
