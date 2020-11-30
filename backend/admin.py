@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Todo
+from .models import Course
 
 
-class TodoAdmin(admin.ModelAdmin):
+class CourseAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'description', 'date', 'done')
     list_display_links = ('id', 'title')
     search_fields = ('id', 'title', 'description')
@@ -10,4 +10,4 @@ class TodoAdmin(admin.ModelAdmin):
     list_filter = ('done',)
 
 
-admin.site.register(Todo, TodoAdmin)
+admin.site.register(Course, CourseAdmin)

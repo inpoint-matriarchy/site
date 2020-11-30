@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Todo
+from .models import Course
 
 
-class TodoSerializer(serializers.ModelSerializer):
+class CourseSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Todo
+        model = Course
         fields = '__all__'
