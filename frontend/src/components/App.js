@@ -1,17 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from './layout/Header';
-import DashBoard from './backend/DashBoard';
 
 class App extends Component {
     render() {
-        return (
-            <Fragment>
-                <Header />
-                <DashBoard />
-            </Fragment>
-        )
+        return <div>
+            <h2>a</h2>
+            <h3>aга</h3>
+        </div>
     }
 }
 
