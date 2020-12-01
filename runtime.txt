@@ -1,2 +1,1 @@
-python-<version>eg. 
 python-3.8.6
