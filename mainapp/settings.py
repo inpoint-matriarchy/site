@@ -13,12 +13,8 @@ SECRET_KEY = ')2r@f91jrlu*9nxnzfo0446+=aa57!w_h67lkid*13rz=1mrmc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< Updated upstream
-ALLOWED_HOSTS = []
-=======
-ALLOWED_HOSTS = ['*']
->>>>>>> Stashed changes
 
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -112,9 +108,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-<<<<<<< Updated upstream
-=======
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
->>>>>>> Stashed changes
 STATIC_URL = '/static/'
