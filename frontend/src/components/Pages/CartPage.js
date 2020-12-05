@@ -85,3 +85,5 @@ class CartPage extends React.Component {
         }
     }
 }
+
+export default CartPage;

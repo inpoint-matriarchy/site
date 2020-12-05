@@ -1,24 +1,22 @@
 import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import MainPage from './MainPage';
 
-import ShoppingPage from './ShoppingPage'
-import CartPage from './CartPage'
-import UserPage from './UserPage'
+import Home from './Pages/Home';
+import CartPage from './Pages/CartPage';
+import About from './Pages/About';
+import SignIn from './Components/SignIn';
+
 
 class App extends Component {
     render() {
-<<<<<<< HEAD
         return  (
         <Switch>
-            <Route exact path='/' component={ShoppingPage} />
+            <Route exact path='/' component={Home} />
             <Route path='/cart' component={CartPage} />
-            <Route path='/account' component={UserPage} />
+            <Route path='/about' component={About} />
+            <Route path='/signin' component={SignIn} />
         </Switch>
         )
-=======
-        return <MainPage/> 
->>>>>>> 1a032af008fc4322d1b929134b9bd3890e3b4aa9
     }
 }
 

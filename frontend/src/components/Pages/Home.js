@@ -1,40 +1,25 @@
-import './App.css';
 import React from 'react';
-import {AppBar, Button, Container, IconButton, Toolbar, Typography, Box, Paper, Grid, Card, CardContent, CardActions, Link} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import {useStyles, cards} from './Constants';
+import { Button, Container, Typography, Paper, Grid, Card, CardContent, CardActions} from '@material-ui/core';
+import {useStyles, cards} from '../Constants/Constants';
+import {Menu} from '../Components/Menu';
 
 
-class Menu extends React.Component{
-    render(){
-      let menuitems = ["Главная", "Не главная"]
-    return <div>
-        {menuitems.map((value, index, list)=>{
-          return <div key={index}><Link>{value}</Link></div>
-        })}
-      </div>
-    }
+class Menu_2 extends React.Component{
+  render(){
+    let menuitems = ["Главная", "Не главная"]
+  return <div>
+      {menuitems.map((value, index, list)=>{
+        return <div key={index}><Link>{value}</Link></div>
+      })}
+    </div>
   }
+}
 
-
-function MainPage() {
+function Home() {
     const classes = useStyles();
   return ( <>
-    <AppBar position="fixed">
-      <Container fixed>
-        <Toolbar>
-          <IconButton onClick={console.log('ready')} edge="start" color="inherit" aria-label="menu" className={classes.menuButton}>
-            <MenuIcon/>
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>Главная</Typography>
-          <Box mr={3}>
-            <Button color="inherit" variant="outlined">Let's celebrate and</Button>
-          </Box>
-          <Button color="secondary" variant="contained">)))))))))</Button>
-        </Toolbar>
-      </Container>
-    </AppBar>
-
+  <Menu/>
+  <Menu_2/>
     <main>
       <Paper className={classes.mainHeader} style={{ backgroundImage: 'url(https://sun9-3.userapi.com/impg/ANuZRv58rfSk2BbpdBSSQZ7MGo884mv2YZH-xQ/vqluxg6P9Lc.jpg?size=1280x1024&quality=96&proxy=1&sign=363c234377e3479dadf2db1188b55924)'}}>
         <Container fixed>
@@ -81,12 +66,8 @@ function MainPage() {
         </Grid>
       </Container>
     </main>
-
-    <footer className={classes.footer}>
-     <Typography variant="subtitle1" align="center">(c)2020</Typography>
-    </footer>
     </>
 )   
 };
 
-export default MainPage;
+export default Home;
