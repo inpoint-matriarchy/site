@@ -7,4 +7,5 @@ urlpatterns = [
     path('', include('frontend.urls')),
     # path('course/', include('backend.urls')),
     path('api/', backend.views.get_list),
+    path('api/post/', backend.views.post_list),
 ]
