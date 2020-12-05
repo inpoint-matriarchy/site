@@ -1,9 +1,9 @@
-from rest_framework import routers
-from .api import TodoViewSet
+# from rest_framework import routers
+# from .api import CourseViewSet
 
 
-router = routers.DefaultRouter()
-router.register('api/todo', TodoViewSet, 'backend')
+# router = routers.DefaultRouter()
+# router.register('', CourseViewSet, 'backend')
 
 
-urlpatterns = router.urls
+# urlpatterns = router.urls
